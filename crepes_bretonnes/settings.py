@@ -145,3 +145,12 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/2.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+
+#ajout des templates
+#Todo vérifier chemin crepes
+TEMPLATE_DIRS = (
+    "/home/crepes/crepes_bretonnes/templates/",
+)
+
+APPEND_SLASH = True # ajout de slash en fin d'URL
