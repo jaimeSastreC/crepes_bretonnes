@@ -19,8 +19,12 @@ Including another URLconf
 
 from django.urls import path
 # ajouté accueil => home
-from blog import views
+from . import views
 
 urlpatterns = [
-    path('index', views.indexBlog, name='index'),
+    path('index/', views.indexBlog, name='index'),
+    path('date', views.date_actuelle),
+    path('addition/<int:nombre1>/<int:nombre2>/', views.addition),
+    path('contact/', views.contact, name='contact'),
+    path('article/<int:id>', views.lire, name='lire')
 ]

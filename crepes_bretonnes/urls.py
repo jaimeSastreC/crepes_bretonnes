@@ -28,4 +28,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('blog/', include('blog.urls')),
     url(r'^index$', views.index, name='index'),
+    url(r'^$', views.index, name='index'),
 ]

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}Ma page d'accueil du Blog !!{% endblock %}
+{% block content %}
+    <h2>Articles à lire:</h2>
+    <p>nous sommes le {{ date |date:"DATE_FORMAT"}}</p>
+    {% for article in derniers_articles %}
+        <section>
+            <div class="article">
+                <h1>{{ article.titre }}</h1>
+                <p>{{ article.contenu|truncatewords_html:80 }}</p>
+                <p><a href="{% url 'lire' article.id %}">Lire la suite</a></p>
+            </div>
+        </section>
+    {% empty %}
+        <p>Aucun article.</p>
+    {% endfor %}
+{% endblock %}
