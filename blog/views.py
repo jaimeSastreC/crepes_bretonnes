@@ -4,7 +4,8 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from datetime import datetime
 from blog.models import Article, Categorie
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, render_to_response
+from django.template import RequestContext
 
 
 # Create your views here.
@@ -48,23 +49,32 @@ def indexBlog(request):
         {'derniers_articles': articles, 'date': datetime.now},
     )
 
-def lire(request, id):
+def lire(request, id, slug):
     """ Afficher un article complet """
-    try:
-        article = Article.objects.get(id=id)
-    except Article.DoesNotExist:
-        raise Http404
+    # try:
+    #     article = Article.objects.get(id=id)
+    # except Article.DoesNotExist:
+    #     raise Http404
+    # article = get_object_or_404(Article, id=id)
+    article = get_object_or_404(Article, id=id, slug=slug)
 
     return render(request, 'blog/lire.html', {'article': article})
 
+def handler404(request, *args, **argv):
+    response = render_to_response('404.html', {},
+            context_instance=RequestContext(request))
+    response.status_code = 404
+    return response
+
+def handler500(request, *args, **argv):
+    response = render_to_response('500.html', {},
+                                  context_instance=RequestContext(request))
+    response.status_code = 500
+    return response
 
 
 
-
-
-
-
-
+####################### exercices ##########################
 
 def contact(request):
     return HttpResponse("Page Contact en travaux ;)")

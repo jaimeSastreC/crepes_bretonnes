@@ -36,7 +36,10 @@ ADMINS = (
 
 
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+]
 
 
 # Application definition
@@ -48,6 +51,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    #'django.contrib.sites',
     'blog',
 ]
 
@@ -104,7 +108,7 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'PORT': '8889',
-        'HOST':'localhost' ,     # 'localhost','127.0.0.1'
+        'HOST':'127.0.0.1',     # 'localhost','127.0.0.1'
         'NAME': 'crepes_bretonnes',
         'USER': 'root',
         'PASSWORD': 'root',
@@ -150,6 +154,10 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+# add for CSS and Javascript - folder static on root
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "static"),
+)
 
 #ajout des templates
 #Todo vérifier chemin crepes

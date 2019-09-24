@@ -23,13 +23,14 @@ class Categorie(models.Model):
 
 class Article(models.Model):
     titre = models.CharField(max_length=100)
+    slug = models.SlugField(max_length=100, null=True)
     auteur = models.CharField(max_length=42)
     contenu = models.TextField(null=True)
     # option: default=timezone.now
     date = models.DateTimeField(auto_now_add=True,
                                 auto_now=False,
                                 verbose_name="Date de parution")
-    categorie = models.ForeignKey('Categorie', on_delete=models.CASCADE)
+    categorie = models.ForeignKey(Categorie, on_delete=models.CASCADE)
 
 
     class Meta:
