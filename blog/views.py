@@ -3,7 +3,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse
 from datetime import datetime
-from blog.models import Article, Categorie
+from blog.models import Article, Comment
 from django.shortcuts import render, get_object_or_404, render_to_response
 from django.template import RequestContext
 
@@ -45,8 +45,10 @@ def indexBlog(request):
     """
     articles = Article.objects.all()  # Nous sélectionnons tous nos articles
     return render(
-        request, 'blog/accueil_blog.html',
-        {'derniers_articles': articles, 'date': datetime.now},
+        request,
+        'blog/accueil_blog.html',
+        {'derniers_articles': articles,
+         'date': datetime.now},
     )
 
 def lire(request, id, slug):
@@ -57,8 +59,17 @@ def lire(request, id, slug):
     #     raise Http404
     # article = get_object_or_404(Article, id=id)
     article = get_object_or_404(Article, id=id, slug=slug)
+    # tri commentaire avec filte sur article
+    comments = Comment.objects.filter(article=article)
 
-    return render(request, 'blog/lire.html', {'article': article})
+
+    return render(request, 'blog/lire.html', {'article': article, 'comments': comments})
+
+def list_articles(request, month, year):
+    """ Liste des articles d'un mois précis. """
+    return HttpResponse(
+        "Vous avez demandé les articles de {0} {1}.".format(month, year)
+    )
 
 def handler404(request, *args, **argv):
     response = render_to_response('404.html', {},

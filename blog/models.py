@@ -12,7 +12,7 @@ class Categorie(models.Model):
 
     class Meta:
         verbose_name = "Categorie d'Article"
-        #ordering = ['nom'] #pas nécessaire
+        ordering = ['nom'] #pas nécessaire
 
     def __str__(self):
         """
@@ -24,7 +24,7 @@ class Categorie(models.Model):
 class Article(models.Model):
     titre = models.CharField(max_length=100)
     slug = models.SlugField(max_length=100, null=True)
-    auteur = models.CharField(max_length=42)
+    auteur = models.CharField(max_length=32)
     contenu = models.TextField(null=True)
     # option: default=timezone.now
     date = models.DateTimeField(auto_now_add=True,
@@ -32,7 +32,7 @@ class Article(models.Model):
                                 verbose_name="Date de parution")
     categorie = models.ForeignKey(Categorie, on_delete=models.CASCADE)
 
-
+    # informations Admin, affichage
     class Meta:
         verbose_name = "article du Blog"
         ordering = ['date']
@@ -43,6 +43,18 @@ class Article(models.Model):
         rappel: clé étrangère vers Categorie
         """
         return self.titre
+
+class Comment(models.Model):
+    contenu = models.TextField(null=False)
+    auteur = models.CharField(max_length=32)
+    article = models.ForeignKey(Article, on_delete=models.CASCADE)
+
+    class Meta:
+        verbose_name = "Commentaire d'article"
+
+    def __str__(self):
+        # tuple of reference
+        return self.id, self.article
 
 ########################### one to one ###########################
 

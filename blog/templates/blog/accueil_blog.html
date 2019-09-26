@@ -1,18 +1,22 @@
 {% extends "base.html" %}
 {% block title %}Ma page d'accueil du Blog !!{% endblock %}
 {% block content %}
-    <h2>Articles à lire:</h2>
-    <p>nous sommes le {{ date |date:"DATE_FORMAT"}}</p>
+    <header>
+        <h2>Articles à lire:</h2>
+        <p>nous sommes le {{ date |date:"DATE_FORMAT"}}</p>
+    </header>
     {% for article in derniers_articles %}
-        <section>
+        <article>
             <div class="article">
-                <h1>{{ article.titre }}</h1>
+                <header>
+                    <h1>{{ article.titre }}</h1>
+                </header>
                 <p>{{ article.contenu|truncatewords_html:80 }}</p>
-{#                <p><a href="{% url 'lire' article.id %}">Lire la suite</a></p>#}
+                {#                <p><a href="{% url 'lire' article.id %}">Lire la suite</a></p>#}
                 <p><a href="{% url 'lire' id=article.id slug=article.slug %}">Lire la suite</a>
             </div>
-        </section>
-    {% empty %}
+        </article>
+        {% empty %}
         <p>Aucun article.</p>
     {% endfor %}
 {% endblock %}

@@ -1,43 +1,29 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-       <link rel="stylesheet" href="/media/css/style.css" />
-       <title>{% block title %}Mon blog sur les crêpes bretonnes{% endblock %}</title>
-        <style>
-            body {
-                margin: 2em auto;
-                width: 60%;
-            }
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+        <title>{% block title %}Mon blog sur les crêpes bretonnes{% endblock %}</title>
 
-            li, ul {
-                display: inline;
-                text-align: center;
-                padding: 4px ;
-                margin: 0;
-            }
-            #titre {
-                text-align: center;
-                background-color: #F0FFF0;
-            }
-        </style>
     </head>
     <body>
         <header>
             <h1 id="titre">Crêpes bretonnes</h1>
             <nav>
-               {% block nav %}
-               <ul>
-                    <li><a href="/index">Accueil</a></li>
-                    <li><a href="/blog/index">Blog</a></li>
-                    <li><a href="/blog/contact">Contact</a></li>
-               </ul>
-               {% endblock %}
+                {% block nav %}
+                    <ul>
+                        <li><a href="/index">Accueil</a></li>
+                        <li><a href="/blog/index">Blog</a></li>
+                        <li><a href="/blog/contact">Contact</a></li>
+                    </ul>
+                {% endblock %}
             </nav>
         </header>
-        <section id="content">
-           {% block content %}{% endblock %}
-        </section>
-        <br>
+        <main>
+            <section id="content">
+                {% block content %}{% endblock %}
+            </section>
+        </main>
         <footer>&copy; Crêpes bretonnes</footer>
     </body>
 </html>

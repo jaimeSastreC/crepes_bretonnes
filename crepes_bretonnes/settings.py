@@ -31,9 +31,8 @@ DEBUG_TEMPLATE = DEBUG
 
 ############################################
 ADMINS = (
-    ('Jaime Sastre', 'sastre@cepes_bretonnes.fr')
+    ('Jaime Sastre', 'jaime.sasre@lapiscine.fr')
 )
-
 
 
 ALLOWED_HOSTS = [
@@ -158,6 +157,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
+
 
 #ajout des templates
 #Todo vérifier chemin crepes

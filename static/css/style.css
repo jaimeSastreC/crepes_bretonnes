@@ -1,0 +1,15 @@
+body {
+    margin: 2em auto;
+    width: 60%;
+}
+
+li, ul {
+    display: inline;
+    text-align: center;
+    padding: 4px ;
+    margin: 0;
+}
+#titre {
+    text-align: center;
+    background-color: #F0FFF0;
+}

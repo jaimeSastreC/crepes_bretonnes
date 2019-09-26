@@ -17,7 +17,7 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 
-from django.urls import path
+from django.urls import path, include, re_path
 # ajouté accueil => home
 from . import views
 
@@ -28,6 +28,7 @@ urlpatterns = [
     path('contact/', views.contact, name='contact'),
     #path('article/<int:id>', views.lire, name='lire')
     path('article/<int:id>-<slug:slug>', views.lire, name='lire'),
+    re_path(r'^articles/(?P<year>\d{4})/(?P<month>\d{2})', views.list_articles),
 ]
 
 

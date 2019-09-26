@@ -1,10 +1,27 @@
 {% extends "base.html" %}
+{% load static %}
+
 {% block title %}Mon Article{% endblock %}
 {% block content %}
     <br>
     <article>
-        <h1>{{ article.titre }} <span class="small">dans {{ article.categorie.nom }}</span></h1>
+        <p><em>Catégorie: {{ article.categorie }}</em></p>
+        <header>
+            <h1>{{ article.titre }} <span class="small">dans {{ article.categorie.nom }}</span></h1>
+        </header>
         <p class="infos">Rédigé par {{ article.auteur }}, le {{ article.date|date:"DATE_FORMAT" }}</p>
         <div class="contenu">{{ article.contenu|linebreaks }}</div>
+
+
+        <img src="{% static 'blog/crepe-jambon.jpg' %}" alt="Mon image" />
+        <div>
+            {% for comment in comments%}
+                <p>
+                    <em>Commentaire: </em>{{ comment.contenu }}
+                </p>
+                {% empty %}
+                <p>Aucun commentaire</p>
+            {% endfor %}
+        </div>
     </article>
 {% endblock %}
