@@ -7,6 +7,9 @@ from blog.models import Article, Comment
 from django.shortcuts import render, get_object_or_404, render_to_response
 from django.template import RequestContext
 
+from .forms import ContactForm
+from django.core.mail import send_mail
+
 
 # Create your views here.
 
@@ -83,12 +86,43 @@ def handler500(request, *args, **argv):
     response.status_code = 500
     return response
 
+######################### Forms ##############################
+
+def contact(request):
+    # Construire le formulaire, soit avec les données postées,
+    # soit vide si l'utilisateur accède pour la première fois
+    # à la page.
+    form = ContactForm(request.POST or None)
+    # Nous vérifions que les données envoyées sont valides
+    # Cette méthode renvoie False s'il n'y a pas de données
+    # dans le formulaire ou qu'il contient des erreurs.
+    if form.is_valid():
+        # Ici nous pouvons traiter les données du formulaire
+        sujet = form.cleaned_data['sujet']
+        message = form.cleaned_data['message']
+        envoyeur = form.cleaned_data['envoyeur']
+        renvoi = form.cleaned_data['renvoi']
+
+        # Nous pourrions ici envoyer l'e-mail grâce aux données
+        # que nous venons de récupérer
+        envoi = True
+        send_mail(
+            sujet,
+            message,
+            envoyeur,
+            ['jaime.sastre@lapiscine.pro'],
+            fail_silently=False,
+        )
+
+    # Quoiqu'il arrive, on affiche la page du formulaire.
+    return render(request, 'blog/contact.html', locals())
+
 
 
 ####################### exercices ##########################
 
-def contact(request):
-    return HttpResponse("Page Contact en travaux ;)")
+# def contact(request):
+#     return HttpResponse("Page Contact en travaux ;)")
 
 def date_actuelle(request):
     return render(request, 'blog/date.html', {'date': datetime.now()})
