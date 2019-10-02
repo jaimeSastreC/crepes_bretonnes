@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block title %}formulaure Contact!!{% endblock %}
+{% block content %}
+<h1>Ajouter un nouveau contact</h1>
+
+{% if sauvegarde %}
+    <p>Ce contact a bien été enregistré.</p>
+{% endif %}
+
+<p>
+    <form method="post" enctype="multipart/form-data" action=".">
+       {% csrf_token %}
+       {{ form.as_p }}
+       <input type="submit"/>
+    </form>
+</p>
+{% endblock %}

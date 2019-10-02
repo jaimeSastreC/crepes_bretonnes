@@ -3,12 +3,15 @@ body {
     width: 60%;
 }
 
-li, ul {
+header li, ul {
     display: inline;
     text-align: center;
     padding: 4px ;
     margin: 0;
 }
+
+
+
 #titre {
     text-align: center;
     background-color: #F0FFF0;

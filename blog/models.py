@@ -56,6 +56,15 @@ class Comment(models.Model):
         # tuple of reference
         return self.id, self.article
 
+
+class Contact(models.Model):
+    nom = models.CharField(max_length=255)
+    adresse = models.TextField()
+    photo = models.ImageField(upload_to="static/img/")
+
+    def __str__(self):
+        return self.nom
+
 ########################### one to one ###########################
 
 class Moteur(models.Model):

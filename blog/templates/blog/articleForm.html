@@ -1,9 +1,9 @@
 {% extends "base.html" %}
-{% block title %}formulaure Contact!!{% endblock %}
+{% block title %}formulaire Article!!{% endblock %}
 {% block content %}
 {% if envoi %}Votre message a bien été envoyé !{% endif %}
 
-    <form action="{% url "contact" %}" method="post">
+    <form action="{% url "article" %}" method="post">
         {% csrf_token %}
     {# as_table as_ul as_p#}
         {{ form.as_p }}

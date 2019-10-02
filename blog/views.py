@@ -8,6 +8,9 @@ from django.shortcuts import render, get_object_or_404, render_to_response
 from django.template import RequestContext
 
 from .forms import ContactForm
+from .forms import ArticleForm
+from .forms import NouveauContactForm
+from .models import Contact
 from django.core.mail import send_mail
 
 
@@ -106,18 +109,40 @@ def contact(request):
         # Nous pourrions ici envoyer l'e-mail grâce aux données
         # que nous venons de récupérer
         envoi = True
-        send_mail(
-            sujet,
-            message,
-            envoyeur,
-            ['jaime.sastre@lapiscine.pro'],
-            fail_silently=False,
-        )
+        # send_mail(
+        #     sujet,
+        #     message,
+        #     envoyeur,
+        #     ['jaime.sastre@lapiscine.pro'],
+        #     fail_silently=False,
+        # )
 
     # Quoiqu'il arrive, on affiche la page du formulaire.
     return render(request, 'blog/contact.html', locals())
 
+def article(request):
 
+    form = ArticleForm(request.POST or None)
+    if form.is_valid():
+        form.save()
+    return render(request, 'blog/articleForm.html', locals())
+
+
+def nouveau_contact(request):
+    sauvegarde = False
+    form = NouveauContactForm(request.POST or None, request.FILES)
+    if form.is_valid():
+        contact = Contact()
+        contact.nom = form.cleaned_data["nom"]
+        contact.adresse = form.cleaned_data["adresse"]
+        contact.photo = form.cleaned_data["photo"]
+        contact.save()
+        sauvegarde = True
+
+    return render(request, 'blog/ajoutContact.html', {
+        'form': form,
+        'sauvegarde': sauvegarde
+    })
 
 ####################### exercices ##########################
 

@@ -11,7 +11,6 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
-
 from django.core.mail.backends.smtp import EmailBackend
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
@@ -43,7 +42,7 @@ ALLOWED_HOSTS = [
 ]
 
 
-# email param
+# email param - It works !!
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
@@ -164,10 +163,16 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+
 # add for CSS and Javascript - folder static on root
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
 )
+
+#chemin contrôlé et confirmé - '/Applications/MAMP/htdocs/PYTHON/monDjango/crepes_bretonnes/static/img/'
+# import os - from django.conf import settings - settings.MEDIA_ROOT
+#MEDIA_ROOT = os.path.join(BASE_DIR, "static/img/")
+
 
 
 #ajout des templates
