@@ -19,6 +19,9 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from django.conf.urls import url
+#pour visualiser images
+from django.conf import settings
+from django.conf.urls.static import static
 
 # ajouté accueil => home
 from blog import views
@@ -30,3 +33,6 @@ urlpatterns = [
     url(r'^index$', views.index, name='index'),
     url(r'^$', views.index, name='index'),
 ]
+
+# pour visualiser images
+urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

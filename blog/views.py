@@ -77,6 +77,14 @@ def list_articles(request, month, year):
         "Vous avez demandé les articles de {0} {1}.".format(month, year)
     )
 
+def voir_contacts(request):
+    return render(
+        request,
+        'blog/voir_contacts.html',
+        {'contacts': Contact.objects.all()}
+    )
+
+
 def handler404(request, *args, **argv):
     response = render_to_response('404.html', {},
             context_instance=RequestContext(request))
@@ -88,6 +96,8 @@ def handler500(request, *args, **argv):
                                   context_instance=RequestContext(request))
     response.status_code = 500
     return response
+
+
 
 ######################### Forms ##############################
 

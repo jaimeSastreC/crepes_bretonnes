@@ -21,13 +21,15 @@ from django.urls import path, include, re_path
 # ajouté accueil => home
 from . import views
 
+
 urlpatterns = [
     path('index/', views.indexBlog, name='index'),
     path('date', views.date_actuelle),
     path('addition/<int:nombre1>/<int:nombre2>/', views.addition),
     path('contact/', views.contact, name='contact'),
     path('article/', views.article, name='article'),
-    path('ajoutContact/', views.nouveau_contact, name='ajout'),
+    path('ajout_contact/', views.nouveau_contact, name='ajout'),
+    path('voir_contacts/', views.voir_contacts, name='voir_contacts'),
     #path('article/<int:id>', views.lire, name='lire')
     path('article/<int:id>-<slug:slug>', views.lire, name='lire'),
     re_path(r'^articles/(?P<year>\d{4})/(?P<month>\d{2})', views.list_articles),

@@ -60,7 +60,7 @@ class Comment(models.Model):
 class Contact(models.Model):
     nom = models.CharField(max_length=255)
     adresse = models.TextField()
-    photo = models.ImageField(upload_to="static/img/")
+    photo = models.ImageField(upload_to="images/")
 
     def __str__(self):
         return self.nom
