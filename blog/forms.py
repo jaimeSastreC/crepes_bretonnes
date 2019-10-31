@@ -52,4 +52,6 @@ class ArticleForm(forms.ModelForm):
 class NouveauContactForm(forms.Form):
     nom = forms.CharField()
     adresse = forms.CharField(widget=forms.Textarea)
+    # pour un fichier autre que imag
+    # FileField()
     photo = forms.ImageField()
