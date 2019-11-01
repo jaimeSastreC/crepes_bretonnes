@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 """
 
 import os
-import django_heroku
+#import django_heroku
 from django.core.mail.backends.smtp import EmailBackend
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
