@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="96299262-ff9e-4061-94c8-9215b4006373" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="96299262-ff9e-4061-94c8-9215b4006373" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,16 +134,6 @@
               <item name="crepes_bretonnes" type="b2602c69:ProjectViewProjectNode" />
               <item name="crepes_bretonnes" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="crepes_bretonnes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crepes_bretonnes" type="462c0819:PsiDirectoryNode" />
-              <item name="blog" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="crepes_bretonnes" type="b2602c69:ProjectViewProjectNode" />
-              <item name="crepes_bretonnes" type="462c0819:PsiDirectoryNode" />
-              <item name="crepes_bretonnes" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -228,7 +216,7 @@
       <workItem from="1560505832036" duration="7793000" />
       <workItem from="1560534177365" duration="32878000" />
       <workItem from="1568847413816" duration="321000" />
-      <workItem from="1569301767361" duration="46937000" />
+      <workItem from="1569301767361" duration="47181000" />
     </task>
     <task id="LOCAL-00001" summary="sauvegarde 2019-6-1">
       <created>1560535006677</created>
@@ -286,11 +274,18 @@
       <option name="project" value="LOCAL" />
       <updated>1570104561512</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="sauvegarde 2019-11-heroku">
+      <created>1572567702477</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1572567702481</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87929000" />
+    <option name="totallyTimeSpent" value="88173000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -361,7 +356,8 @@
     <MESSAGE value="sauvegarde 2019-9-mail" />
     <MESSAGE value="sauvegarde 2019-10-photo01" />
     <MESSAGE value="sauvegarde 2019-10-photo-final" />
-    <option name="LAST_COMMIT_MESSAGE" value="sauvegarde 2019-10-photo-final" />
+    <MESSAGE value="sauvegarde 2019-11-heroku" />
+    <option name="LAST_COMMIT_MESSAGE" value="sauvegarde 2019-11-heroku" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/blog/apps.py">
