@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="96299262-ff9e-4061-94c8-9215b4006373" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/crepes_bretonnes/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/crepes_bretonnes/settings.py" afterDir="false" />
-    </list>
+    <list default="true" id="96299262-ff9e-4061-94c8-9215b4006373" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -217,7 +215,7 @@
       <workItem from="1560505832036" duration="7793000" />
       <workItem from="1560534177365" duration="32878000" />
       <workItem from="1568847413816" duration="321000" />
-      <workItem from="1569301767361" duration="49755000" />
+      <workItem from="1569301767361" duration="50021000" />
     </task>
     <task id="LOCAL-00001" summary="sauvegarde 2019-6-1">
       <created>1560535006677</created>
@@ -300,7 +298,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="90747000" />
+    <option name="totallyTimeSpent" value="91013000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
