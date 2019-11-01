@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96299262-ff9e-4061-94c8-9215b4006373" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" afterPath="$PROJECT_DIR$/app.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/crepes_bretonnes/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/crepes_bretonnes/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -45,8 +44,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/crepes_bretonnes/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="103" column="56" lean-forward="true" selection-start-line="103" selection-start-column="56" selection-end-line="103" selection-end-column="56" />
+            <state relative-caret-position="1112">
+              <caret line="190" lean-forward="true" selection-start-line="190" selection-end-line="190" />
               <folding>
                 <element signature="e#317#326#0" expanded="true" />
               </folding>
@@ -77,6 +76,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -213,7 +217,7 @@
       <workItem from="1560505832036" duration="7793000" />
       <workItem from="1560534177365" duration="32878000" />
       <workItem from="1568847413816" duration="321000" />
-      <workItem from="1569301767361" duration="48822000" />
+      <workItem from="1569301767361" duration="49368000" />
     </task>
     <task id="LOCAL-00001" summary="sauvegarde 2019-6-1">
       <created>1560535006677</created>
@@ -278,11 +282,25 @@
       <option name="project" value="LOCAL" />
       <updated>1572567702481</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="sauvegarde 2019-11-heroku2">
+      <created>1572598810749</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1572598810750</updated>
+    </task>
+    <task id="LOCAL-00011" summary="sauvegarde 2019-11-branche-Postgre">
+      <created>1572598896643</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1572598896643</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="89814000" />
+    <option name="totallyTimeSpent" value="90360000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -294,9 +312,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="125" y="57" width="1179" height="877" extended-state="0" />
+    <frame x="68" y="23" width="1273" height="877" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.498" visible="true" weight="0.22691293" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498" visible="true" weight="0.2095857" />
       <window_info id="Structure" order="1" sideWeight="0.502" side_tool="true" weight="0.21809745" />
       <window_info id="Favorites" order="2" sideWeight="0.502" side_tool="true" weight="0.21809745" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -309,7 +328,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32885906" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32866243" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.40254778" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32885906" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -354,7 +373,9 @@
     <MESSAGE value="sauvegarde 2019-10-photo01" />
     <MESSAGE value="sauvegarde 2019-10-photo-final" />
     <MESSAGE value="sauvegarde 2019-11-heroku" />
-    <option name="LAST_COMMIT_MESSAGE" value="sauvegarde 2019-11-heroku" />
+    <MESSAGE value="sauvegarde 2019-11-heroku2" />
+    <MESSAGE value="sauvegarde 2019-11-branche-Postgre" />
+    <option name="LAST_COMMIT_MESSAGE" value="sauvegarde 2019-11-branche-Postgre" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/blog/apps.py">
@@ -536,8 +557,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/crepes_bretonnes/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="103" column="56" lean-forward="true" selection-start-line="103" selection-start-column="56" selection-end-line="103" selection-end-column="56" />
+        <state relative-caret-position="1112">
+          <caret line="190" lean-forward="true" selection-start-line="190" selection-end-line="190" />
           <folding>
             <element signature="e#317#326#0" expanded="true" />
           </folding>
