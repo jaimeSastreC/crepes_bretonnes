@@ -4,4 +4,9 @@
 # Database
 *.sqlite3
 
-
+venv
+*.pyc
+staticfiles
+.env
+db.sqlite3
+getting-started/*
