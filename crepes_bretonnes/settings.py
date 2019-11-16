@@ -14,8 +14,9 @@ import os
 #import django_heroku
 from django.core.mail.backends.smtp import EmailBackend
 
+# Todo : vérifier impact mise à jour chemin root
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
 # Quick-start development settings - unsuitable for production
@@ -62,7 +63,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    #'django.contrib.sites',
+    'debug_toolbar',
+    # 'django.contrib.sites',
     'blog',
 ]
 
@@ -74,7 +76,11 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
+# django debug toolbar
+INTERNAL_IPS = ['127.0.0.1']
+
 
 ROOT_URLCONF = 'crepes_bretonnes.urls'
 
@@ -183,7 +189,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 #ajout des templates
 #Todo vérifier chemin crepes
 TEMPLATE_DIRS = (
-    "/home/crepes/crepes_bretonnes/templates/",
+     "/home/crepes/crepes_bretonnes/templates/",
+    #"/home/crepes_bretonnes/templates/",
 )
 
 APPEND_SLASH = True # ajout de slash en fin d'URL
