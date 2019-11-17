@@ -2,21 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96299262-ff9e-4061-94c8-9215b4006373" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini_url/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini_url/admin.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini_url/apps.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini_url/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini_url/migrations/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini_url/models.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini_url/tests.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini_url/urls.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/mini_url/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mini_url/templates/mini_url/liste.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/mini_url/templates/mini_url/nouveau.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/blog/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crepes_bretonnes/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/crepes_bretonnes/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/crepes_bretonnes/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/crepes_bretonnes/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini_url/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/mini_url/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mini_url/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/mini_url/views.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,17 +39,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/blog/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
+            <state relative-caret-position="-198">
               <caret line="3" selection-start-line="3" selection-end-line="4" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mini_url/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+            <state relative-caret-position="394">
+              <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
               </folding>
@@ -67,23 +57,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/mini_url/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="37" lean-forward="true" selection-start-line="24" selection-start-column="37" selection-end-line="24" selection-end-column="37" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/mini_url/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
+            <state relative-caret-position="15">
+              <caret line="1" column="19" lean-forward="true" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -92,10 +70,28 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mini_url/templates/mini_url/liste.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="83" lean-forward="true" selection-start-line="7" selection-start-column="83" selection-end-line="7" selection-end-column="83" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mini_url/templates/mini_url/nouveau.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/crepes_bretonnes/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="413">
-              <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+            <state relative-caret-position="231">
+              <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
               <folding>
                 <element signature="e#653#685#0" expanded="true" />
               </folding>
@@ -108,8 +104,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -157,14 +153,19 @@
         <option value="$PROJECT_DIR$/mini_url/forms.py" />
         <option value="$PROJECT_DIR$/blog/admin.py" />
         <option value="$PROJECT_DIR$/crepes_bretonnes/urls.py" />
-        <option value="$PROJECT_DIR$/mini_url/views.py" />
+        <option value="$PROJECT_DIR$/mini_url/templates/nouveau.html" />
+        <option value="$PROJECT_DIR$/mini_url/templates/liste.html" />
+        <option value="$PROJECT_DIR$/mini_url/templates/mini_url/liste.html" />
         <option value="$PROJECT_DIR$/mini_url/urls.py" />
+        <option value="$PROJECT_DIR$/mini_url/templates/mini_url/nouveau.html" />
+        <option value="$PROJECT_DIR$/mini_url/templates/mini_list/nouveau.html" />
+        <option value="$PROJECT_DIR$/mini_url/views.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="25" />
-    <option name="y" value="24" />
+    <option name="x" value="537" />
+    <option name="y" value="23" />
     <option name="width" value="1349" />
     <option name="height" value="851" />
   </component>
@@ -192,6 +193,19 @@
               <item name="crepes_bretonnes" type="462c0819:PsiDirectoryNode" />
               <item name="mini_url" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="crepes_bretonnes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crepes_bretonnes" type="462c0819:PsiDirectoryNode" />
+              <item name="mini_url" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="crepes_bretonnes" type="b2602c69:ProjectViewProjectNode" />
+              <item name="crepes_bretonnes" type="462c0819:PsiDirectoryNode" />
+              <item name="mini_url" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
+              <item name="mini_url" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -211,16 +225,16 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/blog/templates/blog" />
-      <recent name="$PROJECT_DIR$/blog" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/mini_url/templates/mini_list" />
       <recent name="$PROJECT_DIR$/static/img" />
       <recent name="$PROJECT_DIR$/blog/templates" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/crepes_bretonnes" />
-      <recent name="$PROJECT_DIR$/crepes_bretonnes/samples" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/blog/templates/blog" />
+      <recent name="$PROJECT_DIR$/blog" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -276,7 +290,7 @@
       <workItem from="1568847413816" duration="321000" />
       <workItem from="1569301767361" duration="47735000" />
       <workItem from="1572807966357" duration="763000" />
-      <workItem from="1573165124002" duration="28672000" />
+      <workItem from="1573165124002" duration="34767000" />
     </task>
     <task id="LOCAL-00001" summary="sauvegarde 2019-6-1">
       <created>1560535006677</created>
@@ -362,11 +376,18 @@
       <option name="project" value="LOCAL" />
       <updated>1573947433518</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="sauvegarde 2019-11-apps url 01">
+      <created>1573992375172</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1573992375172</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129921000" />
+    <option name="totallyTimeSpent" value="136016000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -378,10 +399,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="25" y="24" width="1349" height="851" extended-state="0" />
+    <frame x="537" y="23" width="1349" height="851" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.498" weight="0.19739862" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.498" visible="true" weight="0.19739862" />
       <window_info id="Structure" order="1" sideWeight="0.502" side_tool="true" weight="0.21809745" />
       <window_info id="Favorites" order="2" sideWeight="0.502" side_tool="true" weight="0.21809745" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -395,7 +416,7 @@
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32885906" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.1027668" />
+      <window_info anchor="bottom" id="Terminal" order="11" visible="true" weight="0.1027668" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32885906" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -441,7 +462,8 @@
     <MESSAGE value="sauvegarde 2019-11-heroku" />
     <MESSAGE value="sauvegarde 2019-11-retour" />
     <MESSAGE value="sauvegarde 2019-11-retour 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="sauvegarde 2019-11-retour 2" />
+    <MESSAGE value="sauvegarde 2019-11-apps url 01" />
+    <option name="LAST_COMMIT_MESSAGE" value="sauvegarde 2019-11-apps url 01" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/blog/apps.py">
@@ -591,16 +613,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="716">
-          <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/blog/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="97">
@@ -611,10 +623,27 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/blog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-198">
+          <caret line="3" selection-start-line="3" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/blog/forms.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="529">
+          <caret line="55" column="6" selection-start-line="55" selection-start-column="6" selection-end-line="55" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#24#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/mini_url/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        <state relative-caret-position="75">
+          <caret line="5" column="23" lean-forward="true" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
@@ -633,37 +662,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/crepes_bretonnes/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="413">
-          <caret line="32" column="18" selection-start-line="32" selection-start-column="18" selection-end-line="32" selection-end-column="18" />
+        <state relative-caret-position="231">
+          <caret line="26" column="22" lean-forward="true" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
           <folding>
             <element signature="e#653#685#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/blog/views.py">
+    <entry file="file://$PROJECT_DIR$/mini_url/templates/mini_url/liste.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="3" selection-start-line="3" selection-end-line="4" />
+        <state relative-caret-position="105">
+          <caret line="7" column="83" lean-forward="true" selection-start-line="7" selection-start-column="83" selection-end-line="7" selection-end-column="83" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mini_url/urls.py">
+    <entry file="file://$PROJECT_DIR$/mini_url/templates/mini_url/nouveau.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="1" lean-forward="true" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="30">
+          <caret line="2" column="45" selection-start-line="2" selection-start-column="45" selection-end-line="2" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/mini_url/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="29" lean-forward="true" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+        <state relative-caret-position="394">
+          <caret line="29" column="9" lean-forward="true" selection-start-line="29" selection-start-column="9" selection-end-line="29" selection-end-column="9" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mini_url/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="19" lean-forward="true" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>

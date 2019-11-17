@@ -5,5 +5,11 @@ from . import views
 app_name = 'mini_url'
 
 urlpatterns = [
-    url(r'apps/', views.apps, name='apps')
+    url(r'^$', views.liste, name='url_liste'),
+    url(r'apps', views.apps, name='url_apps'),
+    url(r'list.html', views.liste, name='url_liste'),
+    url(r'nouveau.html', views.nouveau, name='url_nouveau'),
+    url(r'^(?P<code>\w{6})/$', views.redirection, name='url_redirection')
 ]
+
+
