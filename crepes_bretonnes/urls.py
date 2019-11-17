@@ -25,11 +25,12 @@ from django.conf.urls.static import static
 
 # ajouté accueil => home
 from blog import views
-
+# from mini_url import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('blog/', include('blog.urls')),
+    path('mini_url/', include('mini_url.urls')),
     url(r'^index$', views.index, name='index'),
     url(r'^$', views.index, name='index'),
 ]

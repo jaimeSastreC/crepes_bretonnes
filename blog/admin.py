@@ -5,6 +5,8 @@ from django.contrib import admin
 from django.contrib import admin
 from django.utils.text import Truncator
 from .models import Categorie, Article, Comment
+from mini_url.models import MiniUrl
+
 
 
 class ArticleAdmin(admin.ModelAdmin):
@@ -45,7 +47,15 @@ class ArticleAdmin(admin.ModelAdmin):
       }),
    )
 
+class MiniURLAdmin(admin.ModelAdmin):
+   list_display = ('url', 'code', 'date', 'pseudo', 'nb_acces')
+   list_filter = ('pseudo', )
+   date_hierarchy = 'date'
+   ordering = ('date', )
+   search_fields = ('url', )
+
 
 admin.site.register(Categorie)
 admin.site.register(Article, ArticleAdmin)
 admin.site.register(Comment)
+admin.site.register(MiniUrl, MiniURLAdmin)

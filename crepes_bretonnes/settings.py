@@ -66,6 +66,7 @@ INSTALLED_APPS = [
     'debug_toolbar',
     # 'django.contrib.sites',
     'blog',
+    'mini_url',
 ]
 
 MIDDLEWARE = [
@@ -190,6 +191,8 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media/')
 #Todo vérifier chemin crepes
 TEMPLATE_DIRS = (
      "/home/crepes/crepes_bretonnes/templates/",
+     "/home/crepes/crepes_bretonnes/blog/templates/",
+     "/home/crepes/crepes_bretonnes/mini_url/templates/",
     #"/home/crepes_bretonnes/templates/",
 )
 
